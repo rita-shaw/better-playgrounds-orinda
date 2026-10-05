@@ -7,6 +7,7 @@ A one-page positive community petition asking Orinda to work with residents on a
 - Static HTML/CSS/JS suitable for Vercel
 - Google Form link for private supporter name, ZIP code, optional address, optional comment, optional public name, and explicit name-display consent
 - Positive petition framing with context about the two current options, missing sandbox, and natural-play goals
+- Persistent floating petition CTA that links directly to the Google Form
 - Accessible, rotating approved-comments carousel with manual controls and reduced-motion support
 - Reference links to the Outpost playscape at Presidio Tunnel Tops
 

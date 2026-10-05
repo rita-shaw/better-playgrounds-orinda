@@ -52,6 +52,11 @@ img { display: block; max-width: 100%; }
 }
 .skip-link:focus { top: 1rem; }
 
+.floating-cta { position: fixed; right: clamp(1rem, 3vw, 2rem); bottom: max(1rem, env(safe-area-inset-bottom)); z-index: 30; display: inline-flex; align-items: center; justify-content: center; gap: .55rem; padding: .82rem 1.15rem; border-radius: 999px; background: var(--coral); color: #fff; box-shadow: 0 7px 0 #bd5d4c, 0 14px 26px rgba(23, 53, 59, .2); text-decoration: none; font-size: .86rem; font-weight: 850; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.floating-cta:hover, .floating-cta:focus-visible { background: #d96650; box-shadow: 0 9px 0 #bd5d4c, 0 17px 30px rgba(23, 53, 59, .24); transform: translateY(-3px); }
+.floating-cta:active { box-shadow: 0 3px 0 #bd5d4c, 0 8px 18px rgba(23, 53, 59, .18); transform: translateY(2px); }
+.floating-cta span { color: var(--yellow); font-size: 1.1rem; }
+
 .site-header {
   position: relative;
   z-index: 10;
@@ -135,7 +140,7 @@ h1 span, h2 em { color: var(--coral); font-style: italic; }
   .support-strip { grid-template-columns: 1fr; gap: .8rem; }.strip-link { justify-self: start; }.split-section, .sign-card { grid-template-columns: 1fr; }.context-copy { grid-template-columns: 1fr; }.section-heading > p:last-child { max-width: 600px; }.doodle { min-height: 270px; }.inspiration-heading { grid-template-columns: 1fr; gap: 1rem; }.photo-grid { grid-template-columns: 1fr; }.photo-card, .photo-small { min-height: 330px; }.site-footer { flex-direction: column; }
 }
 @media (max-width: 520px) {
-  h1 { font-size: clamp(3.2rem, 16vw, 5rem); }.hero { padding-inline: 1rem; }.play-scene { min-height: 350px; border-radius: 30% 70% 20% 24% / 27% 27% 73% 73%; }.play-tower { transform: scale(.74); transform-origin: bottom left; left: 25%; }.slide { transform: scale(.75) skewX(-25deg) rotate(4deg); transform-origin: left bottom; left: 44%; }.support-strip, .section { padding-inline: 1rem; }.section-heading h2, .inspiration-heading h2, .sign-copy h2 { font-size: 3.25rem; }.wish-card { padding: 1rem; }.sign-copy { padding: 2rem 1.4rem 2.5rem; }.photo-caption strong { font-size: 1.2rem; }
+  h1 { font-size: clamp(3.2rem, 16vw, 5rem); }.hero { padding-inline: 1rem; }.play-scene { min-height: 350px; border-radius: 30% 70% 20% 24% / 27% 27% 73% 73%; }.play-tower { transform: scale(.74); transform-origin: bottom left; left: 25%; }.slide { transform: scale(.75) skewX(-25deg) rotate(4deg); transform-origin: left bottom; left: 44%; }.support-strip, .section { padding-inline: 1rem; }.section-heading h2, .inspiration-heading h2, .sign-copy h2 { font-size: 3.25rem; }.wish-card { padding: 1rem; }.sign-copy { padding: 2rem 1.4rem 2.5rem; }.photo-caption strong { font-size: 1.2rem; }.floating-cta { right: 1rem; left: 1rem; bottom: max(.8rem, env(safe-area-inset-bottom)); width: auto; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
 :focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
