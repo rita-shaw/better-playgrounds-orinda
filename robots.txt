@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://better-playgrounds-orinda.vercel.app/sitemap.xml

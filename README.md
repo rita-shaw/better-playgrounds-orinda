@@ -17,7 +17,7 @@ A one-page positive community petition asking Orinda to work with residents on a
 
 ## Data privacy
 
-The site reads only the separate Google Sheets `Public Counter` tab. That tab publishes the aggregate count plus rows generated from the private response tab only when the moderator enters `YES` in column H (`Approved for public display? (type YES)`) and the respondent has checked `Yes, I agree` in the form's consent question. Each public comment row is formatted as `comment||public name`; names are replaced with `Anonymous Orinda resident` unless the respondent explicitly supplied and consented to a public name. Email addresses supplied for playground-status updates are used for that outreach only and never enter the public tab. Addresses, ZIP codes, raw names, and unapproved comments never enter the published tab.
+The site reads only the separate Google Sheets `Public Counter` tab. That tab publishes the aggregate count plus rows generated from the private response tab only when the moderator enters `YES` in column I (`Approved for public display? (type YES)`) and the respondent has checked `Yes, I agree` in the form's consent question. Each public comment row is formatted as `comment||public name`; names are replaced with `Anonymous Orinda resident` unless the respondent explicitly supplied and consented to a public name. Email addresses supplied for playground-status updates are used for that outreach only and never enter the public tab. Addresses, ZIP codes, raw names, and unapproved comments never enter the published tab.
 
 ## Referenced photos
 
