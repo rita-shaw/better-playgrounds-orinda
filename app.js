@@ -1,6 +1,6 @@
 const COUNTER_URL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRg6U5A19DZTEL_wBCTjAYE4UNLKCh0AqaYfoGCrK-R4sqr2gaW-ORKHGxLixV82Owaqb3piZYVlrej/pub?gid=824403967&single=true&output=csv";
-const FIRST_GOAL = 100;
+const FIRST_GOAL = 200;
 const AUTO_ROTATE_MS = 7000;
 
 let approvedComments = [];

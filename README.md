@@ -8,6 +8,7 @@ A one-page positive community petition asking Orinda to work with residents on a
 - Google Form link for private supporter name, ZIP code, optional address, optional email for playground-status updates, optional comment, optional public name, and explicit name-display consent
 - Positive petition framing with context about the two current options, missing sandbox, and natural-play goals
 - Council-facing “What we’re asking for” decision request near the top of the page
+- October 6 Council meeting update that explains the no-final-approval outcome, celebrates the opening for a better public process, and directs visitors to the existing optional family-needs/ideas prompt in the petition form
 - Public-survey context section showing the City’s Concept A and Concept B images plus inclusive-play examples, with links to the SurveyMonkey page and City source documents
 - Persistent floating petition CTA that links directly to the Google Form
 - Gemini-generated hero concept illustration with explicit non-official labeling
