@@ -92,7 +92,13 @@ function renderSupporterCount(count) {
 }
 
 function showCounterFallback() {
+  const countEl = document.querySelector("#supporter-count");
+  const fillEl = document.querySelector("#meter-fill");
+  const progressEl = document.querySelector('[role="progressbar"]');
   const statusEl = document.querySelector("#count-status");
+  if (countEl) countEl.textContent = "—";
+  if (fillEl) fillEl.style.width = "0%";
+  if (progressEl) progressEl.setAttribute("aria-valuenow", "0");
   if (statusEl) statusEl.textContent = "Count temporarily unavailable";
 }
 
