@@ -15,6 +15,8 @@ A one-page positive community petition asking Orinda to work with residents on a
 - Gemini-generated concept-drawing gallery with explicit non-official labeling
 - Accessible, rotating approved-comments carousel with manual controls and reduced-motion support
 - Reference links to the Outpost playscape at Presidio Tunnel Tops
+- Curated community examples for Glorietta Elementary School and Strawberry Creek Park
+- A read-only campaign-inbox watcher at `scripts/better_playgrounds_inbox_watch.py`
 
 ## Data privacy
 
@@ -26,6 +28,8 @@ The Presidio Tunnel Tops images are externally hosted by the Golden Gate Nationa
 
 - [Kids can grow with nature at the Outpost playscape](https://www.parksconservancy.org/article/kids-can-grow-nature-outpost-playscape-presidio-tunnel-tops-playground)
 
+The Glorietta Elementary School images are curated community-submitted photos stored in `images/comparables/`. They are used without sender names, family details, or raw email text; no children or identifying private details are shown in the selected views. Strawberry Creek Park is text-only and links to the community-shared Google Maps listing rather than copying its photos.
+
 Before using the site for a long-term public campaign, confirm permission or replace the remote photos with images that have an explicit reuse license.
 
 ## Local preview
@@ -35,3 +39,14 @@ python3 -m http.server 4173
 ```
 
 Then open <http://localhost:4173>.
+
+## Campaign inbox watcher
+
+Run the watcher manually with the provisioned Hermes Google Workspace interpreter:
+
+```bash
+/Users/biscuit/.hermes/venvs/google-workspace/bin/python \
+  scripts/better_playgrounds_inbox_watch.py --initialize
+```
+
+The scheduled read-only job runs daily at 8:00 AM Pacific. It uses the separate `betterplaygroundsfororinda@gmail.com` OAuth store, keeps a local message-ID state file, reports only newly seen matching ideas/replies, and never marks, sends, archives, deletes, or publishes mail. New items remain a review queue before public-site or spreadsheet changes.
