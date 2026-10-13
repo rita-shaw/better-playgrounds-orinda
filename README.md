@@ -15,7 +15,7 @@ A one-page positive community petition asking Orinda to work with residents on a
 - Gemini-generated concept-drawing gallery with explicit non-official labeling
 - Accessible, rotating approved-comments carousel with manual controls and reduced-motion support
 - Reference links to the Outpost playscape at Presidio Tunnel Tops
-- Curated community examples for Glorietta Elementary School and Strawberry Creek Park
+- Curated community examples for Glorietta Elementary School and the remaining playground references from the comparables list
 - A read-only campaign-inbox watcher at `scripts/better_playgrounds_inbox_watch.py`
 
 ## Data privacy
@@ -28,9 +28,9 @@ The Presidio Tunnel Tops images are externally hosted by the Golden Gate Nationa
 
 - [Kids can grow with nature at the Outpost playscape](https://www.parksconservancy.org/article/kids-can-grow-nature-outpost-playscape-presidio-tunnel-tops-playground)
 
-The Glorietta Elementary School images are curated community-submitted photos stored in `images/comparables/`. They are used without sender names, family details, or raw email text; no children or identifying private details are shown in the selected views. Strawberry Creek Park is text-only and links to the community-shared Google Maps listing rather than copying its photos.
+The Glorietta Elementary School images are curated community-submitted photos stored in `images/comparables/`. They are used without sender names, family details, or raw email text; no children or identifying private details are shown in the selected views. Strawberry Creek, Ohlone Park East, Frog Park, and Shipwreck Cove are presented as text/link references because verified first-party images were not available for reuse; Shipwreck event photos were not reused because they show identifiable children. The Lawrence Hall of Science Outdoor Nature Lab uses an externally hosted official photo and links back to the source article.
 
-Before using the site for a long-term public campaign, confirm permission or replace the remote photos with images that have an explicit reuse license.
+Before using the site for a long-term public campaign, confirm permission or replace remote photos with images that have an explicit reuse license.
 
 ## Local preview
 
