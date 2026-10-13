@@ -12,7 +12,6 @@ import argparse
 import html
 import json
 import os
-import re
 import subprocess
 import sys
 import tempfile
@@ -113,14 +112,21 @@ def save_state(state: dict[str, Any]) -> None:
             os.unlink(temp_name)
 
 
-def clean_snippet(value: str) -> str:
-    text = html.unescape(value or "")
-    text = re.sub(r"https?://\S+", "[link]", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    text = re.sub(r"\s*On .*wrote:.*$", "", text, flags=re.IGNORECASE)
-    if len(text) > 220:
-        text = text[:217].rstrip() + "..."
-    return text
+def safe_signals(row: dict[str, Any]) -> str:
+    """Return broad, non-identifying topic signals instead of email text."""
+    text = html.unescape(f"{row.get('subject', '')} {row.get('snippet', '')}").lower()
+    labels = [
+        ("natural materials", ("natural", "wood", "wooden", "wood chips", "woodchips")),
+        ("shade", ("shade", "shaded", "trees")),
+        ("water play", ("water", "creek")),
+        ("accessibility", ("accessible", "accessibility")),
+        ("surfacing", ("rubber", "surfacing", "dirt")),
+        ("caregiver space", ("caregiver", "seating", "gather")),
+    ]
+    matches = [label for label, needles in labels if any(needle in text for needle in needles)]
+    if matches:
+        return "signals: " + ", ".join(matches[:4])
+    return "review the full message in the private campaign inbox"
 
 
 def classify(row: dict[str, Any]) -> str:
@@ -169,15 +175,12 @@ def run(initialize: bool = False) -> int:
     new_rows.sort(key=lambda row: row.get("date", ""), reverse=True)
     lines = [f"Better Playgrounds inbox — {len(new_rows)} new item(s)"]
     for row in new_rows[:10]:
-        subject = (row.get("subject") or "(no subject)").strip()
         kind = classify(row)
         date = display_date(row.get("date", ""))
-        snippet = clean_snippet(row.get("snippet", ""))
-        line = f"• {kind}: {subject}"
+        line = f"• {kind}"
         if date:
             line += f" ({date})"
-        if snippet:
-            line += f" — {snippet}"
+        line += f" — {safe_signals(row)}"
         lines.append(line)
     if len(new_rows) > 10:
         lines.append(f"• {len(new_rows) - 10} more item(s) are recorded in the watcher state.")
