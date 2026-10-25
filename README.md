@@ -38,6 +38,7 @@ Before using the site for a long-term public campaign, confirm permission or rep
 The learning section is framed for learning and discussion, not as an approved Orinda design or a substitute for site-specific safety and accessibility review. The resource pages were read live on October 25, 2026:
 
 - [Big Picture Science — The Play’s the Thing](https://podcasts.apple.com/us/podcast/big-picture-science/id73329638?i=1000718222335), with [official episode notes](https://www.bigpicturescience.org/episodes/the-plays-the-thing). Episode metadata and the concise summary on the site were verified against Apple Podcasts and the official notes; the episode was not listened to.
+- [Pod-on-the-Parish — Tweens and Teens Love Playgrounds — Designing Outdoor Spaces That Actually Work](https://podcasts.apple.com/us/podcast/pod-on-the-parish/id1894523108?i=1000762155538). Apple Podcasts episode notes and metadata read October 25, 2026: 27 minutes, published March 26, 2026; guest Millie Manton of KOMPAN UK. The site identifies this as a supplier perspective, does not repeat the episode's health statistics, and summarizes the notes without claiming to have listened.
 - [Outside Play Lab](https://www.outsideplay.ca/), a toolkit for parents, caregivers, and educators from a lab at UBC and BC Children’s Hospital Research Institute.
 
 ## Local preview
