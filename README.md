@@ -16,6 +16,7 @@ A one-page positive community petition asking Orinda to work with residents on a
 - Accessible, rotating approved-comments carousel with manual controls and reduced-motion support
 - Reference links to the Outpost playscape at Presidio Tunnel Tops
 - Curated community examples for Glorietta Elementary School and the remaining playground references from the comparables list
+- Learning resources: a Big Picture Science episode and the Outside Play Lab outdoor-play toolkit
 - A read-only campaign-inbox watcher at `scripts/better_playgrounds_inbox_watch.py`
 
 ## Data privacy
@@ -31,6 +32,13 @@ The Presidio Tunnel Tops images are externally hosted by the Golden Gate Nationa
 The Glorietta Elementary School images are curated community-submitted photos stored in `images/comparables/`. They are used without sender names, family details, or raw email text; no children or identifying private details are shown in the selected views. Strawberry Creek, Ohlone Park East, Frog Park, and Shipwreck Cove are presented as text/link references because verified first-party images were not available for reuse; Shipwreck event photos were not reused because they show identifiable children. The Lawrence Hall of Science Outdoor Nature Lab uses an externally hosted official photo and links back to the source article.
 
 Before using the site for a long-term public campaign, confirm permission or replace remote photos with images that have an explicit reuse license.
+
+## Learning resources
+
+The learning section is framed for learning and discussion, not as an approved Orinda design or a substitute for site-specific safety and accessibility review. The resource pages were read live on October 25, 2026:
+
+- [Big Picture Science — The Play’s the Thing](https://podcasts.apple.com/us/podcast/big-picture-science/id73329638?i=1000718222335), with [official episode notes](https://www.bigpicturescience.org/episodes/the-plays-the-thing). Episode metadata and the concise summary on the site were verified against Apple Podcasts and the official notes; the episode was not listened to.
+- [Outside Play Lab](https://www.outsideplay.ca/), a toolkit for parents, caregivers, and educators from a lab at UBC and BC Children’s Hospital Research Institute.
 
 ## Local preview
 
